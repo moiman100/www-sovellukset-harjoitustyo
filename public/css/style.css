@@ -1,0 +1,111 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333333
+}
+h4 {
+    color: white;
+    margin: 1em;
+    align-self: center;
+}
+h3 {
+    color: #00a4ff;
+    margin: 0.5em;
+
+}
+.container {
+    height: 100%;
+    display: flex;
+}
+.hbox {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    min-height: min-content;
+}
+.vbox {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.flex {
+    flex: 1;
+}
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.center {
+    align-self: center;
+    justify-self: center;
+}
+.min-height {
+    min-height: min-content;
+}
+.message-container {
+    display: flex;
+    overflow-y: scroll;
+    background-color: #333333;
+    -webkit-overflow-scrolling: touch;
+}
+.message {
+    padding: 0.5em 2em;
+    color: white;
+}
+.timestamp {
+    padding: 0.5em;
+    color: #aaaaaa;
+}
+.error {
+    color: red;
+    margin: 0.5em;
+    min-height: 5em;
+    align-self: center;
+}
+form {
+    width: min-content
+}
+input {
+    background-color: #555555;
+    color: white;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    padding: 1em 2em;
+    font-size: 1rem;
+}
+input:focus {
+    outline: none;
+}
+button {
+    background-color: #0069ed;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    background-color: #00a4ff;
+}
+button:active {
+    background-color: #00408f;
+}
+@media only screen and (max-width: 40em) {
+    .wrap {
+      flex-direction: column;
+    }
+}
